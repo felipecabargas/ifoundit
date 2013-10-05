@@ -1,0 +1,32 @@
+.large-8.columns
+  %h3 DESCRIPTION
+  %p= @report.description
+.large-4.columns
+  .panel
+    %p
+      %strong Sex:
+      = @report.sex
+    %p
+      %strong Age:
+      = @report.age
+    %p
+      %strong Height:
+      = @report.height
+    %p
+      %strong Contexture:
+      = @report.contexture
+    %p
+      %strong Skin:
+      = @report.skin
+    %hr
+    -if @report.medical == true
+      %span.alert.label NEEDS MEDICAL CARE
+    -else
+      %span.success.label HEALTHY PERSON
+    %p
+      %strong Medical Details
+      = @report.med_detail
+    %hr
+    %p
+      %strong Last seen at:
+      = @report.address

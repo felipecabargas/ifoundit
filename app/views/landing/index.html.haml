@@ -3,11 +3,9 @@
   .header=image_tag('mapa.png')
   .row{ :style => 'margin-top: -25px'}
     .large-6.columns
-      %a
-        .button.alert.expand I lost it
+      =link_to "I lost it", new_report_path, :report_status => "Lost", :class => "button alert expand"
     .large-6.columns
-      %a{ :href => new_report_path }
-        .button.success.expand I found it
+      =link_to "I found it", new_report_path, :report_status => "Found", :class => "button success expand"
   .row
     .large-6.columns
       %h3 #Hack4Good

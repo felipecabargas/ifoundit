@@ -1,0 +1,20 @@
+=render('layouts/header')
+.content{ :style => 'margin-top: 100px; margin-bottom: 100px;'}
+  .row
+    = gmaps("markers" => {"data" => @json, "options" => {"rich_marker" => true, "auto_adjust" => true } })
+  .row
+    %h1 
+      CURRENT STATUS
+      -if @report.status == "Lost"
+        %span.alert.radius.label LOST
+      -elsif @report.status == "Found"
+        %span.success.radius.label FOUND
+      -else
+        %span.secondary.radius.label CLOSED
+    %hr
+  .row
+    -if @report.item_type == "Person"
+      =render('person_detail')
+    -if @report.item_type == "Pet"
+      =render('pet_detail')    
+=render('layouts/footer')
