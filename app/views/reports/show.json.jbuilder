@@ -1,0 +1,1 @@
+json.extract! @report, :status, :type, :description, :age, :size, :height, :contexture, :raza, :colors, :skin, :medical, :med_detail, :sex, :address, :latitude, :longitude, :gmaps, :created_at, :updated_at

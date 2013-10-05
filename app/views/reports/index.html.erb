@@ -1,0 +1,62 @@
+<h1>Listing reports</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Status</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Age</th>
+      <th>Size</th>
+      <th>Height</th>
+      <th>Contexture</th>
+      <th>Raza</th>
+      <th>Colors</th>
+      <th>Skin</th>
+      <th>Medical</th>
+      <th>Med detail</th>
+      <th>Sex</th>
+      <th>Address</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th>Gmaps</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @reports.each do |report| %>
+      <tr>
+        <td><%= report.status %></td>
+        <td><%= report.item_type %></td>
+        <td><%= report.description %></td>
+        <td><%= report.age %></td>
+        <td><%= report.size %></td>
+        <td><%= report.height %></td>
+        <td><%= report.contexture %></td>
+        <td><%= report.raza %></td>
+        <td><%= report.colors %></td>
+        <td><%= report.skin %></td>
+        <td><%= report.medical %></td>
+        <td><%= report.med_detail %></td>
+        <td><%= report.sex %></td>
+        <td><%= report.address %></td>
+        <td><%= report.latitude %></td>
+        <td><%= report.longitude %></td>
+        <td><%= report.gmaps %></td>
+        <td><%= link_to 'Show', report %></td>
+        <td><%= link_to 'Edit', edit_report_path(report) %></td>
+        <td><%= link_to 'Destroy', report, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Report', new_report_path %>
+
+
+<%= gmaps("markers" => {"data" => @json, "options" => {"rich_marker" => true } }) %>

@@ -13,6 +13,8 @@ gem "zurb-foundation", "~> 4.3.2"
 
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
+gem 'devise'
+gem 'gmaps4rails'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

@@ -1,0 +1,29 @@
+<%= render "layouts/header" %>
+<div class="content" style="margin-top: 100px; margin-bottom: 100px;">
+  <div class="row">
+    <div class="large-6 columns large-centered">
+      <h2>Sign in</h2>
+      <hr />
+    </div>
+    <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+      <div class="row">
+        <div class="large-6 columns large-centered"><%= f.label :email %><br />
+        <%= f.email_field :email, :autofocus => true %></div>
+      </div>
+      <div class="row">
+        <div class="large-6 columns large-centered"><%= f.label :password %><br />
+        <%= f.password_field :password %></div>
+      </div>
+      <div class="row">
+        <div class="large-6 columns large-centered">
+        <%= f.submit "Sign in", :class => 'button success expand' %></div>
+      </div>
+    <% end %>
+    <div class="row">
+      <div class="large-6 columns large-centered">
+        <%= render "users/shared/links" %>
+      </div>
+    </div>
+  </div>
+</div>
+<%= render "layouts/footer" %>

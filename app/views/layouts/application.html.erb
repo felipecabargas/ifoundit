@@ -13,9 +13,13 @@
 
   	<!-- Set the viewport width to device width for mobile -->
   	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link href="/assets/favicon.png" rel="shortcut icon" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/assets/logo.png"/>
   	<title><%= content_for?(:title) ? yield(:title) : "IFoundIt" %></title>
 
+    <script type="text/javascript" src="//maps.google.com/maps/api/js?v=3.5&sensor=false&amp;libraries=geometry"></script>
+    <script type="text/javascript" src="//google-maps-utility-library-v3.googlecode.com/svn/tags/markerclustererplus/2.0.5/src/markerclusterer_packed.js"></script>
+    <%= stylesheet_link_tag "gmaps4rails" %>
   	<%= stylesheet_link_tag    "application" %>
   	<%= javascript_include_tag "vendor/custom.modernizr" %>
     <%= csrf_meta_tags %>
@@ -28,4 +32,5 @@
     
     <%= javascript_include_tag "application" %>
   </body>
+  <%= yield :scripts %>
 </html>

@@ -2,8 +2,9 @@ class CreateItems < ActiveRecord::Migration
   def change
     create_table :items do |t|
       t.string :status
-      t.string :lat
-      t.string :long
+      t.string :address
+      t.float :lat
+      t.float :long
       t.text :description
       t.integer :user_id
       

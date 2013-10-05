@@ -1,0 +1,36 @@
+<%= render "layouts/header" %>
+<div class="content" style="margin-top: 100px; margin-bottom: 100px;">
+  <div class="row">
+    <div class="large-6 columns large-centered">
+      <h2>Sign up</h2>
+      <hr />
+    </div>
+    
+    <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+      <%= devise_error_messages! %>
+      <div class="row">
+        <div class="large-6 columns large-centered"><%= f.label :email %><br />
+        <%= f.email_field :email, :autofocus => true %></div>
+      </div>
+      <div class="row">
+        <div class="large-6 columns large-centered"><%= f.label :password %><br />
+        <%= f.password_field :password %></div>
+      </div>
+      <div class="row">
+        <div class="large-6 columns large-centered"><%= f.label :password_confirmation %><br />
+        <%= f.password_field :password_confirmation %></div>
+      </div>
+      <div class="row">
+        <div class="large-6 columns large-centered">
+        <%= f.submit "Sign up" , :class => 'button success expand'%></div>
+        <div>
+    <% end %>
+
+    <div class="row">
+      <div class="large-6 columns large-centered">
+        <%= render "users/shared/links" %>
+      </div>
+    </div>
+  </div>
+</div>
+<%= render "layouts/footer" %>

@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  status: MyString
+  type: 
+  description: MyString
+  age: MyString
+  size: MyString
+  height: 1.5
+  contexture: MyString
+  raza: MyString
+  colors: MyString
+  skin: MyString
+  medical: false
+  med_detail: MyString
+  sex: MyString
+  address: MyString
+  latitude: 1.5
+  longitude: 1.5
+  gmaps: false
+
+two:
+  status: MyString
+  type: 
+  description: MyString
+  age: MyString
+  size: MyString
+  height: 1.5
+  contexture: MyString
+  raza: MyString
+  colors: MyString
+  skin: MyString
+  medical: false
+  med_detail: MyString
+  sex: MyString
+  address: MyString
+  latitude: 1.5
+  longitude: 1.5
+  gmaps: false

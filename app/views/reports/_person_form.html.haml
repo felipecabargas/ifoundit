@@ -1,0 +1,52 @@
+.row
+  %form.custom
+    .row
+      .large-3.columns
+        %label{for: "customDropdown"} Any notorious medical condition?
+        %select#customDropdown
+          %option NO
+          %option YES
+          %option NOT SURE
+      .large-3.columns
+        %label If YES. Which one?
+        %input{placeholder: "Ex: Alzheimer, Diabetes, Autism", type: "text"}/
+      .large-3.columns
+        %label{for: "customDropdown"} Sex
+        %select#customDropdown
+          %option Woman
+          %option Man
+          %option N.D.
+      .large-3.columns
+        %label{for: "customDropdown"} Age
+        %select#customDropdown
+          %option 0-2 years
+          %option 3-5 years
+          %option 6-9 years
+          %option 10-13 years
+          %option 14-16 years
+          %option 17-19 years
+          %option 20-24 years
+          %option 25-30 years
+          %option 31-35 years
+          %option 36-40 years
+          %option +40 years
+          %option +50 years
+          %option +60 years
+    .row
+      .large-3.columns
+        %label Height (in meters)
+        %input{placeholder: "Ex: 1.70", type: "text"}/
+      .large-3.columns
+        %label{for: "customDropdown"} Body
+        %select#customDropdown
+          %option Skinny
+          %option Regular
+          %option Fat
+      .large-6.columns
+        %form
+          %label Address (optional)
+          %input{placeholder: "Ex: Av.Vitacura 2771, Las Condes, Santiago, Chile", type: "text"}/
+    .row
+      .large-12.columns
+        %label Description
+        %textarea{placeholder: "Does this person respond to any name?, Describe the subject in a few lines to see if WE have any matches."}
