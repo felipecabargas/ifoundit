@@ -1,4 +1,5 @@
 class ReportsController < ApplicationController 
+  http_basic_authenticate_with :name => "camilinda", :password => "caquita1234", :only => [:index]
   before_filter :authenticate_user!
   before_action :set_report, only: [:show, :edit, :update, :destroy]
 

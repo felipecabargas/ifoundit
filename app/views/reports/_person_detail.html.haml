@@ -21,11 +21,11 @@
     %hr
     -if @report.medical == true
       %span.alert.label NEEDS MEDICAL CARE
+      %p
+        %strong Medical Details
+        = @report.med_detail
     -else
       %span.success.label HEALTHY PERSON
-    %p
-      %strong Medical Details
-      = @report.med_detail
     %hr
     %p
       %strong Last seen at:
