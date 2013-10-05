@@ -1,0 +1,20 @@
+=render('layouts/header')
+.content
+  .header=image_tag('mapa.png')
+  .row{ :style => 'margin-top: -25px'}
+    .large-6.columns
+      .button.alert.expand I lost it
+    .large-6.columns
+      .button.success.expand I found it
+  .row
+    .large-6.columns
+      %h3 #Hack4Good
+      %hr
+      %p{ :style => 'text-align: justify;'} Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+    .large-6.columns
+      %h3 About the project
+      %hr
+      %p{ :style => 'text-align: justify;'} Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.      
+  .row
+    %hr
+=render('layouts/footer')

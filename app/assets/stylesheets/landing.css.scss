@@ -1,3 +1,31 @@
 // Place all the styles related to the landing controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.top-bar-section li a:not(.button).found{
+  background: #27ae60;
+}
+
+.top-bar-section li a:not(.button).lost{
+  background: #c0392b;
+}
+
+.logo > img{
+  height: 120px;
+  width: auto;
+}
+
+button.success, .button.success{
+  background: #27ae60;
+  border: none;
+}
+
+button.alert, .button.alert{
+  background: #c0392b;
+  border: none;
+}
+
+.header > img{
+  width: 100%;
+  height: auto;
+}
