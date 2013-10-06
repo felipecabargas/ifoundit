@@ -1,0 +1,12 @@
+.large-12.columns
+  .panel  
+    %h3 DESCRIPTION
+    %p= @report.description
+    %hr
+    %h3 IMAGE OF THE OBJECT
+    %p
+      =image_tag(@report.image.url)
+    %hr
+    %h3 LAST SEEN AT
+    %p
+      = @report.address

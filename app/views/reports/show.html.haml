@@ -15,6 +15,8 @@
   .row
     -if @report.item_type == "Person"
       =render('person_detail')
-    -if @report.item_type == "Pet"
-      =render('pet_detail')    
+    -elsif @report.item_type == "Pet"
+      =render('pet_detail')
+    -else
+      =render('object_detail')
 =render('layouts/footer')

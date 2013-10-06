@@ -4,6 +4,8 @@
 .large-4.columns
   .panel
     %p
+      =image_tag(@report.image.url)
+    %p
       %strong Sex:
       = @report.sex
     %p
@@ -30,3 +32,8 @@
     %p
       %strong Last seen at:
       = @report.address
+    %hr
+    -if @report.status == 'Found'
+      %a.button.expand I RECOGNIZE HIM/HER !
+    -elsif @report.status == 'Lost'
+      %a.button.expand I SAW HIM/HERl !

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131005164220) do
+ActiveRecord::Schema.define(version: 20131006122747) do
 
   create_table "items", force: true do |t|
     t.string   "status"
@@ -67,6 +67,10 @@ ActiveRecord::Schema.define(version: 20131005164220) do
     t.boolean  "gmaps"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   create_table "users", force: true do |t|

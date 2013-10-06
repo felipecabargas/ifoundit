@@ -25,6 +25,10 @@ button.success, .button.success{
   border: none;
 }
 
+button.success:hover, .button.success:hover{
+  background: #1D7F46;
+}
+
 button.alert, .button.alert{
   background: #c0392b;
   border: none;
