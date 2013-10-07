@@ -4,8 +4,8 @@ This repo contains all the source code for IFOUNDIT.
 
 What is IFOUNDIT?
 
-It's a rails web application that helps people to find whatever them lost through the community. It's like a Waze but for people searching for their dissapeared loved ones.
+It's a rails web application that helps people to find whatever them lost through the community. It's a social map for people searching for their dissapeared loved ones.
 
 ==== The app is currently available at http://ifoundit.herokuapp.com
 
-Proudly developed in Chile by Camila Cortez Bustos (http://github.com/milyy) Felipe Cabargas Madrid (http://github.com/felipecabargas)
+Proudly developed in Chile by Camila L. Bustos (http://github.com/milyy) Felipe Cabargas Madrid (http://github.com/felipecabargas)
