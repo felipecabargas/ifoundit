@@ -10,13 +10,13 @@
       -else
         =f.hidden_field :status, :value => "Found"
       - if @report.errors.any?
-        #error_explanation
-          %h2
-            = pluralize(@report.errors.count, "error")
-            prohibited this report from being saved:
-          %ul
+        .hola
+          %h4
+            Tu formulario contiene
+            = pluralize(@report.errors.count, "error(es)")
+          %blockquote
             - @report.errors.full_messages.each do |msg|
-              %li= msg
+              %p= msg
       .row
         .large-12.columns
           =f.label :item_type
