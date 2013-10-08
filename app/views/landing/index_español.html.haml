@@ -1,0 +1,18 @@
+=render('layouts/header')
+.content
+  .header=image_tag('mapa.png')
+  .row{ :style => 'margin-top: -25px'}
+    .large-6.columns
+      =link_to "Perdí algo", new_report_path, :data => {:sts => "Lost"}, :class => "button alert expand"
+    .large-6.columns
+      =link_to "Encontré algo", new_report_path, :data => {:sts => "Found"}, :class => "button success expand"
+  .row
+    .large-6.columns
+      %h3 #Hack4Good
+      %hr
+      %p{ :style => 'text-align: justify;'} #hack4good es un proyecto global único, dedicado únicamente a reunir a los más grandes ingenieros, diseñadores y emprendedores del mundo. Juntos estamos ayudando para lograr hacer del mundo un lugar mejor, ideando protectos que ayuden a la sociedad
+    .large-6.columns
+      %h3 Sobre el proyecto
+      %hr
+      %p{ :style => 'text-align: justify;'} Nuestra página, está orientada a la búsqueda de personas, animales o cosas. De esta forma si alguien pierde algo importante, se realizará un proceso de búsqueda que revise si alguien en algún lugar cerca de su locación, encontró algo con carácterísticas similares, para relacionarlos y ponerlos en contacto.
+=render('layouts/footer')
