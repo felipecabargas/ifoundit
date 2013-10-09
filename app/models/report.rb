@@ -8,7 +8,7 @@ class Report < ActiveRecord::Base
 
   def gmaps4rails_marker_picture
     {
-      "rich_marker" =>  "<div class='my-marker'><img height='45' width='45' src='http://0.0.0.0:3000/assets/logo.png'/></div>"
+      "rich_marker" =>  "<div class='my-marker'><img src='http://cabargas.com/images/ifound-logo.png' width='45px' height='45px'/></div>"
 
     }
   end

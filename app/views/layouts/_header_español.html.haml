@@ -1,0 +1,16 @@
+%nav.top-bar
+  %ul.title-area
+    %li.name
+      %a{ :href => "#{root_path}" }
+        .logo=image_tag('logo.png')
+  %section.top-bar-section
+    %ul.right
+      %li.divider
+      -if user_signed_in?
+        %li
+          =link_to 'DESCONECTAR', destroy_user_session_path, :method => "delete"
+      -else
+        %li
+          =link_to 'REGISTRO', new_user_registration_path
+        %li
+          =link_to 'INICIAR SESIÓN', new_user_session_path
